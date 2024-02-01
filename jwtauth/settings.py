@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'users',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CROSS_ORIGIN_ALLOW_ALL = True
+CROSS_ALLOW_CREDENTIALS = True
